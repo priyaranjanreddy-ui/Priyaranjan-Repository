@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Priyaranjan Market | Modern Essentials</title>
+    <meta
+      name="description"
+      content="Priyaranjan Market — curated shopping experience for modern lifestyle essentials."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">PR</span>
+          <div>
+            <p class="brand-name">Priyaranjan Market</p>
+            <p class="brand-tagline">Curated shopping for bold living</p>
+          </div>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span></span><span></span><span></span>
+          </button>
+          <ul id="nav-menu">
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#stories">Stories</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="cart-button" data-cart-toggle>
+          <span class="sr-only">Toggle cart</span>
+          Bag
+          <span aria-live="polite" data-cart-count>0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="hero container">
+        <div class="hero-content">
+          <p class="eyebrow">Priyaranjan Exclusives</p>
+          <h1>Shop modular pieces built for hybrid living.</h1>
+          <p>
+            Layer color, function, and comfort with intentionally crafted
+            essentials sourced from independent studios around the world.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#collections">Browse catalog</a>
+            <button class="btn btn-ghost" data-open-filter>
+              Filter products
+            </button>
+          </div>
+          <dl class="hero-stats">
+            <div>
+              <dt>Designers represented</dt>
+              <dd>28</dd>
+            </div>
+            <div>
+              <dt>Average ship time</dt>
+              <dd>48h</dd>
+            </div>
+            <div>
+              <dt>Verified reviews</dt>
+              <dd>4.9 / 5</dd>
+            </div>
+          </dl>
+        </div>
+        <figure class="hero-visual">
+          <img
+            src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80"
+            alt="Selection of modern lifestyle products on display"
+            loading="lazy"
+          />
+          <figcaption>Seasonal drop · Earthbound Capsule</figcaption>
+        </figure>
+      </section>
+
+      <section id="collections" class="container section">
+        <header class="section-header">
+          <div>
+            <p class="eyebrow">Collections</p>
+            <h2>Intentionally sorted for how you live.</h2>
+            <p>
+              Mix and match by mood, purpose, or color palette. Each product
+              passes a 32-point inspection before it appears in the Priyaranjan
+              Market.
+            </p>
+          </div>
+          <div class="filters" role="region" aria-label="Product filters">
+            <label>
+              <span class="sr-only">Search catalog</span>
+              <input
+                type="search"
+                name="search"
+                placeholder="Search the catalog"
+                data-search
+              />
+            </label>
+            <select aria-label="Filter by category" data-filter-category>
+              <option value="all">All categories</option>
+              <option value="workspace">Workspace</option>
+              <option value="wellness">Wellness</option>
+              <option value="travel">Travel</option>
+              <option value="home">Home</option>
+            </select>
+            <select aria-label="Sort by" data-sort>
+              <option value="featured">Sort: Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </div>
+        </header>
+
+        <div class="product-grid" data-product-grid></div>
+      </section>
+
+      <section id="featured" class="section section-alt">
+        <div class="container featured-grid">
+          <div>
+            <p class="eyebrow">Featured story</p>
+            <h2>Priyaranjan x Atelier Lumen</h2>
+            <p>
+              A co-designed lighting series blending sculptural silhouettes with
+              adaptive LEDs for multi-zone homes. Limited run of 200 pieces with
+              serialized engraving.
+            </p>
+            <ul>
+              <li>Sustainably sourced ash + anodized aluminum</li>
+              <li>App-controlled color temperature presets</li>
+              <li>Free worldwide shipping &amp; 10-year repair plan</li>
+            </ul>
+            <button class="btn btn-primary">Reserve a piece</button>
+          </div>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=900&q=80"
+              alt="Limited edition sculptural lamp from Atelier Lumen collaboration"
+              loading="lazy"
+            />
+            <figcaption>Glowform Collection · Drop 02</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="stories" class="container section stories">
+        <header class="section-header">
+          <p class="eyebrow">Community stories</p>
+          <h2>What shoppers love about Priyaranjan.</h2>
+        </header>
+        <div class="story-grid">
+          <article>
+            <p class="quote">
+              “The curation, the packaging, the support—everything feels
+              intentional. Priyaranjan helped us outfit our hybrid office in
+              weeks.”
+            </p>
+            <p class="author">— Celeste, Oakland</p>
+          </article>
+          <article>
+            <p class="quote">
+              “Being able to filter by mood and see shipping estimates upfront
+              is game-changing. Returns were painless when I sized up.”
+            </p>
+            <p class="author">— Malik, Chicago</p>
+          </article>
+          <article>
+            <p class="quote">
+              “Their concierge texted photos from the warehouse so I could tweak
+              finishes. That level of service hooked me.”
+            </p>
+            <p class="author">— Sofia, Lisbon</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section cta">
+        <div class="container cta-inner">
+          <div>
+            <p class="eyebrow">Need guidance?</p>
+            <h2>Book a styling consult with Priyaranjan.</h2>
+            <p>
+              We’ll assemble a tailored cart, coordinate logistics, and make
+              sure every unboxing moment feels cinematic.
+            </p>
+          </div>
+          <form class="cta-form" novalidate>
+            <label>
+              Name
+              <input
+                type="text"
+                name="name"
+                placeholder="Jordan Lee"
+                required
+              />
+            </label>
+            <label>
+              Email
+              <input
+                type="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </label>
+            <label>
+              Wishlist focus
+              <textarea
+                name="message"
+                rows="3"
+                placeholder="Tell us what spaces you’re styling..."
+                required
+              ></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">
+              Lock an appointment
+            </button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" aria-hidden="true" data-cart-panel>
+      <div class="cart-header">
+        <h2>Your bag</h2>
+        <button class="btn-close" data-cart-close aria-label="Close cart">
+          ×
+        </button>
+      </div>
+      <div class="cart-items" data-cart-items>
+        <p class="cart-empty">Your bag is feeling light. Add something!</p>
+      </div>
+      <div class="cart-footer">
+        <p>Total</p>
+        <p class="cart-total" data-cart-total>$0</p>
+        <button class="btn btn-primary" disabled data-checkout>
+          Checkout securely
+        </button>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span data-year></span> Priyaranjan Market</p>
+        <div>
+          <a href="mailto:hello@priyaranjan.market">hello@priyaranjan.market</a>
+          <a href="https://www.instagram.com" target="_blank" rel="noreferrer"
+            >Instagram</a
+          >
+          <a href="https://www.pinterest.com" target="_blank" rel="noreferrer"
+            >Pinterest</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="shop.js" defer></script>
+  </body>
+</html>
