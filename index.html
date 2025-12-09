@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priyaranjan | Curated Shopping Experience</title>
+    <meta
+      name="description"
+      content="Priyaranjan is a modern shopping experience offering curated essentials, mindful design, and joyful gifting."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <div class="brand__mark">P</div>
+        <div class="brand__copy">
+          <p class="eyebrow">est. 2025</p>
+          <h1>Priyaranjan</h1>
+        </div>
+      </div>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="#collection">Collections</a></li>
+          <li><a href="#products">New In</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#newsletter">Join</a></li>
+        </ul>
+      </nav>
+      <button class="ghost-btn">My bag</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">Mindfully curated</p>
+          <h2>
+            Everyday essentials with the signature
+            <span>Priyaranjan</span> aesthetic.
+          </h2>
+          <p>
+            Discover limited drops, joyful gifting, and closet-defining looks.
+            Free carbon-neutral shipping over $80.
+          </p>
+          <div class="hero__actions">
+            <button class="primary-btn">Shop featured</button>
+            <button class="secondary-btn">Build a wishlist</button>
+          </div>
+          <div class="hero__stats" role="list">
+            <div>
+              <strong>120K+</strong>
+              <p>Happy customers</p>
+            </div>
+            <div>
+              <strong>48h</strong>
+              <p>Doorstep delivery</p>
+            </div>
+            <div>
+              <strong>4.9★</strong>
+              <p>Community rating</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__badge">New drop</div>
+          <div class="hero__image">
+            <div class="hero__gradient"></div>
+          </div>
+          <div class="hero__tag">
+            <p>Weekend Uniform Capsule</p>
+            <span>Limited stock</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="pillars" id="stories" aria-label="Brand pillars">
+        <article>
+          <h3>Artisanal focus</h3>
+          <p>
+            Small batch collaborations that spotlight upcoming designers and
+            fair-trade partners across the globe.
+          </p>
+        </article>
+        <article>
+          <h3>Planet positive</h3>
+          <p>
+            Fabric-first sourcing, recycled packaging, and a give-back program
+            that funds community gardens.
+          </p>
+        </article>
+        <article>
+          <h3>Feel-good gifting</h3>
+          <p>
+            Gift-wrapped sets with handwritten notes, mood-matched playlists, and
+            optional surprise add-ons.
+          </p>
+        </article>
+      </section>
+
+      <section class="products" id="products" aria-label="Featured products">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Trend-forward · Limited quantities</p>
+            <h3>Fresh arrivals from Priyaranjan Studio</h3>
+          </div>
+          <div class="filters" role="toolbar" aria-label="Product filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="apparel">Apparel</button>
+            <button class="filter-btn" data-filter="wellness">Wellness</button>
+            <button class="filter-btn" data-filter="home">Home</button>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="collection" id="collection">
+        <div class="collection__copy">
+          <p class="eyebrow">Priyaranjan Atelier</p>
+          <h3>Look sharp, lounge softer</h3>
+          <p>
+            Textured knit layers, all-day trousers, and cloud-foam slides pair
+            with tonal accessories for an effortlessly elevated vibe.
+          </p>
+          <ul>
+            <li>Zero-itch knitwear</li>
+            <li>Wrinkle-resistant tailoring</li>
+            <li>Color stories that mix &amp; match</li>
+          </ul>
+          <button class="primary-btn">Shop the capsule</button>
+        </div>
+        <div class="collection__visual" aria-hidden="true">
+          <div class="collection__card">
+            <p>Weekend Essentials Set</p>
+            <span>$168</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials" aria-label="Community love">
+        <article>
+          <p class="quote">
+            “Priyaranjan reimagines basics with a soulful twist. The unboxing
+            experience feels like a mini-retreat.”
+          </p>
+          <p class="author">Aditi · Brooklyn</p>
+        </article>
+        <article>
+          <p class="quote">
+            “Reusable packaging, thoughtful playlists, and effortless staples
+            make this my go-to gift store.”
+          </p>
+          <p class="author">Marcus · Austin</p>
+        </article>
+      </section>
+
+      <section class="newsletter" id="newsletter">
+        <div>
+          <p class="eyebrow">Stay in the loop</p>
+          <h3>Join the Priyaranjan insider list</h3>
+          <p>
+            Get early access to private drops, styling salons, and sustainability
+            impact reports.
+          </p>
+        </div>
+        <form class="newsletter__form">
+          <label for="email">Email address</label>
+          <div class="input-group">
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="you@email.com"
+              required
+            />
+            <button type="submit" class="primary-btn">Request invite</button>
+          </div>
+          <p class="form-hint">Weekly notes · No spam · Cancel anytime</p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>Priyaranjan</strong>
+        <p>Design-forward retail therapy for modern minimalists.</p>
+      </div>
+      <div>
+        <p>Support</p>
+        <a href="mailto:hello@priyaranjan.shop">hello@priyaranjan.shop</a>
+        <p>+1 (555) 217-0869 · 24/7 concierge</p>
+      </div>
+      <div>
+        <p>Social</p>
+        <a href="https://instagram.com" target="_blank" rel="noreferrer"
+          >Instagram</a
+        >
+        <a href="https://pinterest.com" target="_blank" rel="noreferrer"
+          >Pinterest</a
+        >
+        <a href="https://spotify.com" target="_blank" rel="noreferrer"
+          >Spotify</a
+        >
+      </div>
+    </footer>
+
+    <button class="cart-fab" aria-live="polite">
+      Bag · <span id="cartCount">0</span>
+    </button>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
