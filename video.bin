@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <title>ScreenPal - Forbidden</title>
+    <link rel="icon" href="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/favicon.png" type="image/png">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW, NOARCHIVE, NOSNIPPET, NOODP">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex. nofollow">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="ScreenPal" />
+    <meta property="og:site_name" content="ScreenPal (Formerly Screencast-O-Matic)" />
+    <meta property="og:image" content="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/og_preview.png" />
+    <meta name="csrf-token" content="5YzYrF7aCkFGEQeuAdWrTFDxFmnyNSgYgHBDibHg">
+    <link rel="prefetch" href="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/css/app.css" as="style">
+    <link rel="stylesheet" href="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/vendor/bootstrap/4.3.1/bootstrap.min.css">
+    <link rel="stylesheet" href="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/vendor/fontawesome/5.1.0/css/all.css">
+    <link rel="stylesheet" href="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/vendor/bootstrap-toggle/2.2.2/bootstrap-toggle.min.css">
+    <link rel="stylesheet" href="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/vendor/jstree/3.2.1/themes/default/style.min.css">
+    <link rel="stylesheet" href="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/css/tooltipster.bundle.min.css">
+    <link rel="stylesheet" href="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/css/tooltipster-sideTip-shadow.min.css">
+    <link rel="stylesheet" href="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/css/jstree.css">
+    <link rel="stylesheet" href="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/css/app.css">
+    <style>
+        .error-page h2 {
+            color: var(--sp-pink);
+        }
+        .error-page .lh-25 {
+            line-height: 2.5rem;
+        }
+        .error-page .content-container {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    </style>
+        <style>
+        .error-page img {
+            max-width: 300px;
+        }
+        #create-menu {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="error-page">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-white title-navbar-wrapper fixed-top p-0">
+    <div class="flex-column align-items-start w-100" id="titleNavbar">
+        <div class="container-fluid">
+            <div class="row">
+    </div>
+<div class="row py-3 justify-content-between align-items-center px-4" id="primary_nav">
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#sidebar"
+            aria-controls="titleNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="d-none d-sm-block">
+        <a href="https://screenpal.com">
+            <img class="logo" src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/sp_logo_light.svg" alt="ScreenPal logo">
+        </a>
+    </div>
+    <div class="navbar-right d-flex">
+        <div id="create-menu" class="dropdown">
+    <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+    >
+        Create 
+        <i class="fa fa-angle-down"></i>
+    </button>
+    <div class="dropdown-menu create-menu-with-banner" aria-labelledby="dropdownMenuButton">
+        <div class="create-menu-banner-row row m-0">
+            <div class="col col-md-12 p-0">
+                                    <iframe src="/create-menu-banner?cacheable=true&replace_analytics_ref"
+                            id="create-menu-banner"
+                            style="overflow: hidden; border: 0;"
+                            referrerpolicy="same-origin"
+                            height="130px;"
+                            width="100%"
+                            scrolling="no">
+                    </iframe>
+                            </div>
+        </div>
+        <div class="row m-0">
+            <div class="col col-md-6 col-sm-12">
+                <div class="create-menu-header">
+                    <div>
+                        Create 
+                    </div>
+                    <div>
+                        <img
+                            class="lazy-user create-menu-close"
+                            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                            data-lazy-type="image"
+                            data-src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/modify_plan/icon_x.svg"
+                            height="16"/>
+                    </div>
+                </div>
+                                    <div class="button-wrapper">
+                                                    <a
+                                id="screenshot-button"
+                                href="#"
+                                onClick="launchScreenshot('AccountClickLaunchScreenshot','/download-install-screenshots')"
+                                data-screenpal-ignore="true"
+                            >
+                                <div class="menu-button">
+                                    <div
+                                        id="launch-screenshot"
+                                        class="launch-tool-img"
+                                    >
+                                        <img
+                                            class="lazy-user"
+                                            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                            data-lazy-type="image"
+                                            data-src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/screenpal/nav/launcher_icons/screenshot.svg"
+                                            height="44" />
+                                    </div>
+                                    <span class="cursor-pointer">Capture Screenshot</span>
+                                </div>
+                            </a>
+                                            </div>
+                    <div class="button-wrapper">
+                        <a
+                            class="m-2"
+                            href="#"
+                            onClick="launchRecorder('AccountClickLaunchRecorder','/download-install-recorder')"
+                            data-screenpal-ignore="true"
+                        >
+                            <div class="menu-button">
+                                <div
+                                    id="launch-recorder"
+                                    class="launch-tool-img"
+                                >
+                                    <img
+                                        class="lazy-user"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                        data-lazy-type="image"
+                                        data-src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/screenpal/nav/launcher_icons/recorder.svg"
+                                        height="44" />
+                                </div>
+                                <span class="cursor-pointer">Record Screen / Cam</span>
+                            </div>
+                        </a>
+                    </div>
+                                            <div class="button-wrapper">
+                            <a
+                                href="#"
+                                onClick="launchEditImage('AccountClickLaunchEditImage','/download-install-image-editor')"
+                                data-screenpal-ignore="true"
+                            >
+                            <div class="menu-button">
+                                <div
+                                    id="edit-image"
+                                    class="launch-tool-img"
+                                >
+                                    <img
+                                        class="lazy-user"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                        data-lazy-type="image"
+                                        data-src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/screenpal/nav/launcher_icons/edit_image.svg"
+                                        height="44" />
+                                </div>
+                                <span class="cursor-pointer">Edit Image</span>
+                            </div>
+                            </a>
+                        </div>
+                                        <div class="button-wrapper">
+                        <a
+                            href="#"
+                            onClick="launchEditVideo('AccountClickLaunchEditVideo','/download-install-video-editor')"
+                            data-screenpal-ignore="true"
+                        >
+                            <div class="menu-button">
+                                <div
+                                    id="launch-editor"
+                                    class="launch-tool-img"
+                                    >
+                                    <img
+                                        class="lazy-user"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                        data-lazy-type="image"
+                                        data-src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/screenpal/nav/launcher_icons/video_editor.svg"
+                                        height="44" />
+                                </div>
+                                <span class="cursor-pointer">Edit Video</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col col-md-6 col-sm-12">
+                                            <div class="button-wrapper">
+                            <a
+                                id="stories-button"
+                                href="#"
+                                onClick="launchStories('AccountClickLaunchStories','/download-install-stories')"
+                                data-screenpal-ignore="true"
+                            >
+                            <div class="menu-button">
+                                <div
+                                    id="launch-stories"
+                                    class="launch-tool-img"
+                                >
+                                    <img
+                                        class="lazy-user"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                        data-lazy-type="image"
+                                        data-src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/screenpal/nav/launcher_icons/stories.svg"
+                                        height="44" />
+                                </div>
+                                <span class="cursor-pointer">Storyboard</span>
+                            </div>
+                            </a>
+                        </div>
+                                        
+                    <div class="button-wrapper upload-content">
+                        <a
+                            href="https://screenpal.com/login?furl=https%3A%2F%2Fscreenpal.com%2Fcontent%2Fupload"
+                            data-screenpal-ignore="true"
+                        >
+                            <div class="menu-button">
+                                <div
+                                    id="upload-content"
+                                    class="launch-tool-img"
+                                >
+                                    <img
+                                        class="lazy-user"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                        data-lazy-type="image"
+                                        data-src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/screenpal/nav/launcher_icons/upload_content.svg"
+                                        height="44" />
+                                </div>
+                                <span class="cursor-pointer">Upload Content</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="button-wrapper create-quiz">
+                        <a
+                            href="https://screenpal.com/login?furl=https%3A%2F%2Fscreenpal.com%2Fcontent%2Fquizzes"
+                            data-screenpal-ignore="true"
+                        >
+                            <div class="menu-button">
+                                <div
+                                    id="create-quiz"
+                                    class="launch-tool-img"
+                                >
+                                    <img
+                                        class="lazy-user"
+                                        src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                        data-lazy-type="image"
+                                        data-src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/screenpal/nav/launcher_icons/create_quiz.svg"
+                                        height="44" />
+                                </div>
+                                <span class="cursor-pointer">Create Quiz</span>
+                            </div>
+                        </a>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .button-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .button-wrapper a {
+        margin: 0.5rem 0 0.5rem 0.5rem !important;
+        padding: unset !important;
+    }
+
+    #create-menu .col-sm-6 {
+        float: left;
+        width: 50%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    #create-menu a:after {
+        width: 0;
+    }
+    #create-menu img.create-menu-close {
+        height: 25px;
+        width: 25px;
+        margin-right: 30px;
+    }
+
+    #create-menu > button {
+        background-color: var(--create-menu-button-color);
+        border-color: var(--create-menu-button-border-color);
+        color: var(--base-text-color);
+        margin-left: 1rem;
+        padding: 10px 20px;
+        border-radius: 25px;
+    }
+
+    .log_sig #create-menu > button[aria-expanded="false"] {
+        background-color: #020307;
+    }
+    .log_sig #create-menu .dropdown-menu {
+        top: unset !important;
+        transform: unset !important;
+        left: -280px !important;
+        min-width: 500px;
+    }
+
+    #create-menu > button[aria-expanded="true"] {
+        background-color: var(--create-menu-button-clicked-color);
+    }
+
+    #create-menu > button i {
+        color: var(--create-menu-text-color);
+        margin-left: 1px;
+        margin-top: 4px;
+    }
+
+    #create-menu > button[aria-expanded="true"] i {
+        color: var(--create-menu-button-arrow-clicked-color);
+    }
+
+
+    #create-menu .dropdown-menu {
+        background-color: var(--create-menu-background-color);
+        border: 1px solid var(--create-menu-border-color);
+        border-radius: 10px;
+        left: -350px;
+        min-width: 500px;
+    }
+
+    .app-not-installed #create-menu .create-menu-with-banner {
+        padding-top: 0;
+    }
+
+    .app-not-installed #create-menu .create-menu-banner-row iframe {
+        display: block;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        margin-bottom: 0.5rem;
+    }
+
+    .app-installed #create-menu .create-menu-banner-row,
+    .app-installed #create-menu .create-menu-banner-row iframe
+    {
+        display: none;
+    }
+
+    #create-menu .dropdown-menu a {
+        font-weight: 700!important;
+        font-size: 15px!important;
+    }
+
+    #create-menu .dropdown-toggle::after {
+        display: none;
+    }
+
+    #create-menu .launch-tool-img {
+        background-color: #101429;
+        border-radius: 44px;
+        height: 44px;
+        width: 44px;
+    }
+
+    #create-menu .launch-tool-img:hover {
+        background-color: #050819;
+    }
+
+    .create-menu-header {
+        background-color: var(--create-menu-header-background-color);
+        color: var(--create-menu-text-color);
+        height: 60px;
+        padding-left: 30px;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--create-menu-header-border-color);
+        border-top: 1px solid var(--create-menu-header-border-color);
+    }
+
+    .create-menu-header {
+        display: none;
+    }
+
+    .menu-button {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-button span {
+        color: var(--base-text-color);
+        margin-left: 0.5rem;
+    }
+
+    @media (min-width: 576px) {
+        min-width: 460px;
+    }
+
+    @media (max-width: 575px) {
+        .button-wrapper {
+            padding-left: 15px;
+        }
+
+        .col {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .create-menu-header {
+            padding-left: 30px;
+            width: 100vw;
+        }
+
+        #create-menu .dropdown-menu {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            position: fixed !important;
+            border-radius: 0;
+            transform: none !important;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        #create-menu .dropdown-menu > div {
+            display: block;
+        }
+
+        .create-menu-header {
+            display: flex;
+            margin-bottom: 10px;
+        }
+    }
+</style>
+
+
+    <div class="auth_buttons">
+    <a class="login" href="https://screenpal.com/login">Log in</a>
+    <a class="register" href="https://screenpal.com/register">Sign Up, It&#039;s Free</a>
+</div>
+    </div>
+</div>
+            <div id="actionNavbarWrapper" class="row action-navbar-wrapper justify-content-between align-items-center">
+    <div id="actionNavbar">
+        <ul class="navbar-nav flex-row">
+                                                <li class="nav-item ml-4">
+                        Make videos for free!
+                    </li>
+                    <li class="nav-item ml-4">
+                        <a class="font-weight-bold nav-link" href="https://screenpal.com/register"><u>Create your own</u></a>
+                    </li>
+                                    </ul>
+    </div>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container-fluid content-container">
+        <div class="row justify-content-center mt-5 mb-3">
+            <div class="my-3">
+                <img src="    //dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/errors/awkward.svg"
+" height="300">
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3 mb-3">
+            <div class="my-3">
+                <div class="text-center">
+    <h2>
+        <span>Oh no!</span>
+        <b>This is awkward!</b>
+    </h2>
+    <h4 class="mt-2 lh-25">
+        You aren&#039;t currently authorized to access this area of the site.<br>
+        If you think this is a mistake, please <b><a href="https://support.screenpal.com/portal/en/newticket?departmentId=474621000000006907" target="_blank" class="white-space-nowrap link"> contact our support team </a></b> for help.
+    </h4>
+    <button class="btn btn-secondary btn-back mt-4" onclick="history.back()">
+        <i class="fa fa-arrow-left mr-2" aria-hidden="true"></i>
+        Go Back
+    </button>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+  (function () {
+    
+    const _consoleLog = console.log;
+    const _errorLog = console.error;
+    const _infoLog = console.info;
+    const _warningLog = console.warn;
+    const _debugLog = console.debug;
+
+    
+    const _consoleLogger = function (type) {
+      if (localStorage.getItem('som-console-logging') === '1') {
+        let args = [...arguments[1]].slice(0, arguments[1].length);
+        if (type === 'log') {
+          _consoleLog(...args);
+        } else if (type === 'error') {
+          _errorLog(...args);
+        } else if (type === 'info') {
+          _infoLog(...args);
+        } else if (type === 'warning') {
+          _warningLog(...args);
+        } else if (type === 'debug') {
+          _debugLog(...args);
+        }
+      }
+    }
+
+    
+    window._consoleLogging = function (enable = false) {
+      if (enable) {
+        localStorage.setItem('som-console-logging', '1');
+      } else {
+                  localStorage.removeItem('som-console-logging');
+              }
+    }
+
+    
+    console.log = function () {
+      _consoleLogger('log', arguments);
+    }
+    // Uncomment the following to override console.error() messages
+    // console.error = function () {
+    //   _consoleLogger('error', arguments);
+    // }
+    console.info = function () {
+      _consoleLogger('info', arguments);
+    }
+    console.warn = function () {
+      _consoleLogger('warning', arguments);
+    }
+    console.debug = function () {
+      _consoleLogger('debug', arguments);
+    }
+    
+
+      })();
+</script>
+
+    <script>
+    function isIOS() {
+        let userAgent = navigator.userAgent.toLowerCase();
+
+        return userAgent.indexOf("mac") > 0
+            && (
+                userAgent.indexOf("iphone") > 0
+                || userAgent.indexOf("ipad") > 0
+                || navigator.maxTouchPoints > 1
+            );
+    }
+</script>
+
+    <script defer src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/vendor/alpinejs/v3.11.1/alpinejs.min.js"></script>
+    <script src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/vendor/axios/0.21.0/axios.min.js"></script>
+    <script src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/vendor/jquery/3.5.0/jquery.min.js"></script>
+    <script src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/vendor/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/vendor/popper/1.14.7/popper.min.js"></script>
+    <script src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/vendor/jstree/3.2.1/jstree.min.js"></script>
+    <script src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/vendor/bootstrap/4.3.1/bootstrap.min.js"></script>
+    <script src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/vendor/bootstrap-toggle/2.2.2/bootstrap-toggle.min.js"></script>
+    <script src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/js/tooltipster.bundle.min.js"></script>
+    <script src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/js/cookies.js"></script>
+    <script src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/js/alerts.js"></script>
+    <script src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/js/sidebar.js"></script>
+    <script src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/js/icon-checkbox.js"></script>
+    <script src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/js/jstree.js"></script>
+    <script src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/js/responsive-tables.js"></script>
+    <script src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/js/search_bar_laravel.js"></script>
+    <script src="https://screenpal.com/api/som.js?androidEnabled=true&iosEnabled=true&chromeAppId=ofhomjgaaamjpmjogmkglfojkdlabekg&brand=screenpal" defer></script>
+
+
+        <script>
+        const copyIcon = "//dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/copy.svg";
+        const externalIcon = "//dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/icons/icon_open_link.svg";
+        const removeIcon = "//dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/design_2018/share_remove.png";
+        const closeIcon = "//dfjnl57l0uncv.cloudfront.net/www/472c13e939/images/design_2018/close.png";
+
+        const mediaTypeNames = {
+            videos: {
+                singular: 'Video',
+                plural: 'Videos'
+            },
+            images: {
+                singular: 'Image',
+                plural: 'Images'
+            },
+            quizzes: {
+                singular: 'Quiz',
+                plural: 'Quizzes'
+            }
+        };
+
+        const csrfToken = "5YzYrF7aCkFGEQeuAdWrTFDxFmnyNSgYgHBDibHg";
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+    <script type="text/javascript" src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/js/events.js"></script>
+    <script type="text/javascript" src="//dfjnl57l0uncv.cloudfront.net/www/472c13e939/js/events_amplitude.js"></script>
+
+    <script id="amplitude_script">
+                    amplitude.getInstance().init("b8f8ea09796156c24f937f0c2368c584", null, {
+                                includeUtm: true,
+                includeReferrer: true,
+                saveParamsReferrerOncePerSession: false,
+                includeGclid: true
+            }, function (instance) {
+                amplitude.getInstance().setUserId('null');
+
+                ampDeviceId = instance.options.deviceId;
+
+                if (ampDeviceId) {
+                    ampDeviceId = 'amp-' + ampDeviceId;
+                }
+
+                if (ampWaitingFunc) {
+                    ampWaitingFunc(ampDeviceId);
+                    ampWaitingFunc = undefined;
+                }
+
+                var userProps = {};
+
+                                                                                
+
+                
+                analyticsUserProperties(userProps);
+            });
+            </script>
+    <script>
+    $(document).ready(function () {
+        $('[data-hover-toggle]').each(function() {
+            const $img = $(this).is('img') ? $(this) : $(this).find('img').first();
+            let src = $img.attr('src');
+            const n = src.lastIndexOf('.');
+            src = src.substring(0, n) + "_hover" + src.substring(n);
+            $img.css('background-image', 'url(' + src + ')');
+            const r = $img[0].getBoundingClientRect();
+            $img.css('background-size', r.width + 'px ' + r.height + 'px');
+            $img.attr('hover-toggle-init', '1');
+        });
+        $('[data-hover-toggle]').on('mouseenter', function () {
+            const $img = $(this).is('img') ? $(this) : $(this).find('img').first();
+            let src = $img.attr('src');
+            $img.attr('data-image-src', src);
+            const n = src.lastIndexOf('.');
+            src = src.substring(0, n) + "_hover" + src.substring(n);
+            $img.attr('src', src);
+        });
+        $('[data-hover-toggle]').on('mouseleave', function () {
+            const $img = $(this).is('img') ? $(this) : $(this).find('img').first();
+            $img.attr('src', $img.attr('data-image-src'));
+        });
+    });
+</script>
+
+            <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Check for images marked as requiring user interaction before loading
+                let lazyUserImages = [].slice.call(document.querySelectorAll("img.lazy-user"));
+                if (lazyUserImages.length) {
+                    function handleLazyUserLoadImages(event) {
+                        document.removeEventListener('keydown', handleLazyUserLoadImages);
+                        document.removeEventListener('mousemove', handleLazyUserLoadImages);
+                        lazyUserImages.forEach(function (lazyImage) {
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImage.classList.remove("lazy-user");
+                        });
+                    }
+
+                    document.addEventListener('mousemove', handleLazyUserLoadImages);
+                    document.addEventListener('keydown', handleLazyUserLoadImages);
+                    document.addEventListener('resourceChangingMedia', handleLazyUserLoadImages);
+                }
+            });
+        </script>
+        <script>
+        function setBetaCookie(value) {
+            setCookie('beta_hosting', value, 365, '/', '.screenpal.com');
+            if (value === 0) {
+                window.location.href = '/account';
+            }
+        }
+    </script>
+            <script>
+        
+        (function() {
+            const iPadOs = navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+            let eventName = ('' === 'app' ? 'Web' : 'Mkg') + 'ButtonClick';
+            let eventProps = {action: 'click'}
+
+            $('.upload-content').click(() => {
+                eventProps.name = 'AccountClickLaunchUploadContent';
+                analyticsEvent(eventName, eventProps, null);
+            });
+            $('.create-quiz').click(() => {
+                eventProps.name = 'AccountClickLaunchCreateQuiz';
+                analyticsEvent(eventName, eventProps, null);
+            });
+            // Check for iPadOs 13+ and remove screenshot and stories buttons
+            if (iPadOs) {
+                document.getElementById('screenshot-button').remove();
+                document.getElementById('stories-button').remove();
+            }
+
+            $('.create-menu-close').click(() => {
+                $('#create-menu').modal('hide');
+            });
+        })();
+    </script>
+
+    
+    <script>
+        $(document).on('ready', function () {
+            $('.page-loading').hide();
+        })
+    </script>
+</body>
+
+</html>
