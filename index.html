@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app" aria-labelledby="game-title">
+      <header class="app__header">
+        <h1 id="game-title">Tic Tac Toe</h1>
+        <p class="app__subtitle">
+          Play as X or O. Three in a row wins the round.
+        </p>
+      </header>
+
+      <section class="score" aria-label="Score board">
+        <div class="score__card">
+          <span class="score__label">Player X</span>
+          <span id="score-x" class="score__value">0</span>
+        </div>
+        <div class="score__card">
+          <span class="score__label">Draws</span>
+          <span id="score-draw" class="score__value">0</span>
+        </div>
+        <div class="score__card">
+          <span class="score__label">Player O</span>
+          <span id="score-o" class="score__value">0</span>
+        </div>
+      </section>
+
+      <section class="board" aria-label="Game board" role="grid">
+        <!-- Cells are injected by script.js -->
+      </section>
+
+      <div class="status" role="status" aria-live="polite">
+        <span id="status-text">Player X's turn</span>
+      </div>
+
+      <div class="actions">
+        <button id="reset-round" class="btn" type="button">Reset Round</button>
+        <button id="reset-game" class="btn btn--secondary" type="button">
+          Reset Scores
+        </button>
+      </div>
+    </main>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
